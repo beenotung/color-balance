@@ -1,5 +1,7 @@
 package testing;
 
+import core.ColorBalanceFrame;
+
 public class Main {
 
 	/**
@@ -14,7 +16,7 @@ public class Main {
 		String title = "my title";
 		double nsPerTick = 1e9D / 100D;
 		double nsPerRender = 1e9D / 60D;
-		CanvasShellTest cs = new CanvasShellTest(width, height, scale, title, nsPerTick,
+		ColorBalanceFrame cs = new ColorBalanceFrame(width, height, scale, title, nsPerTick,
 				nsPerRender);
 		cs.start();
 		// cs.stop();
